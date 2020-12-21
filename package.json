@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "react-simple-webpack": "^1.0.0"
+    "react-simple-webpack-hua": "^1.0.0"
   },
   "dependencies": {}
 }
