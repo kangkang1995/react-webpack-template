@@ -1,0 +1,16 @@
+{
+  "name": "react-webpack-template",
+  "version": "1.0.0",
+  "description": "react一个模板",
+  "main": "",
+  "scripts": {
+    "start": "reactWebpack start",
+    "build": "reactWebpack build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "react-simple-webpack": "^1.0.0"
+  },
+  "dependencies": {}
+}
