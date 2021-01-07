@@ -1,19 +1,52 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
+    "target": "es2015",
     "jsx": "react",
-    "lib": ["dom", "es6", "es2015.promise", "es2017"],
-    "sourceMap": true,
-    "esModuleInterop": true,
     "moduleResolution": "node",
-    "types": ["node"],
-    "baseUrl": ".",
-    "paths": {
-      "~*": ["src/*"],
-      "@*": ["src/*"]
-    }
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowUmdGlobalAccess": true,
+    "incremental": true,
+    "removeComments": true,
+    "newLine": "lf",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings"
+    ]
   },
-  "include":["src"],
-  "exclude": ["node_modules", "build", "dist"]
+  "baseUrl": ".",
+  "paths": {
+    "~*": ["src/*"],
+    "@*": ["src/*"]
+  },
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**/*.spec.ts",
+    "__tests__"
+  ]
 }

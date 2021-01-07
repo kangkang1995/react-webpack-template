@@ -5,12 +5,34 @@
   "main": "",
   "scripts": {
     "start": "reactWebpack start",
-    "build": "reactWebpack build"
+    "build": "reactWebpack build",
+    "buildtsc": "yarn tsc",
+    "clean": "rm -rf dist && rm -f tsconfig.*.tsbuildinfo",
+    "build:dry": "yarn tsc -p tsconfig.ci.json",
+    "build:clean": "yarn clean && yarn build",
+    "build:watch": "yarn tsc -w"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "react-simple-webpack-hua": "^1.0.0"
+    "react-simple-webpack-hua": "^1.1.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@luban/devenv": "^1.3.0",
+    "@luban/linter": "1.10",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.6",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "antd": "^4.9.4",
+    "@ant-design/icons": "^4.3.0",
+    "@loadable/component": "^5.14.1",
+    "typescript": "3.9"
+  }
 }
