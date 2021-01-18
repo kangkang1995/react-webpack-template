@@ -1,5 +1,3 @@
-宽松版，不集成鲁班 严格配置
-> 自己试验配置的
 支持一下配置
 1. 图片/视频/字体
 2. css/scss/less
@@ -15,7 +13,6 @@
 12. 懒加载 
 13. alias (区分打包时的环境变量及一些别名)
 14. 多入口 过滤 (只针对start服务时，原因是防止忘记关闭，导致build忘记打包)
-
 ---
 待完善中
 
@@ -34,14 +31,14 @@ cnpm i image-webpack-loader
 #### 2. 如果是多页面
 > 新建的多页面，记得重启服务
 
-#### 3. .compile.js的更改
+#### 3. webpack-config.js的更改
 > 更改完 需要重启服务
 
 ## 自定义功能
 
 > 目前 支持 .eslintrc，tsconfig，.babelrc的自定义
 
-> 和.compile  重点介绍
+> 和webpack-config.js  重点介绍
 
 1. customEntry 自定义入口
 
@@ -136,7 +133,10 @@ prod: {
 ```
 
 7. 是否启动图片压缩
+
 ```javascript
+// 暂时 直接关掉，老是报包错误
+
 // 默认不启动 false
 isImageCompression:false,
 
@@ -172,7 +172,7 @@ npm run build prod  //build后面随意
 
 ## 待解决 
 
-和 @luban/devenv 一起集成
+略
 
 
 ## 备注
@@ -187,3 +187,7 @@ npm run build prod  //build后面随意
 #### 暂时未启动 HappyPack
 
 > 效果不明显......，反而还慢了
+
+
+#### 暂时 删除 image-webpack-loader
+> 先删除把，包不好装，到时候等webpack5 稳定了，直接用webpack5的

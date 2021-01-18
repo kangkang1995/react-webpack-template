@@ -1,24 +1,28 @@
 {
   "name": "react-webpack-template",
   "version": "1.0.0",
-  "description": "react一个模板",
+  "description": "react一个宽松版模板",
   "main": "",
   "scripts": {
-    "start": "reactWebpack start",
-    "build": "reactWebpack build"
+    "start": "zhihuiWebpack start",
+    "build": "zhihuiWebpack build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "react-simple-webpack-hua": "^1.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
+    "@loadable/component": "^5.14.1",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
-    "typescript": "^3.7.3",
-    "@loadable/component": "^5.14.1"
+    "zhihui-webpack": "^1.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "@loadable/component": "^5.14.1",
+    "antd": "^4.9.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "typescript": "3.9"
+  }
 }
