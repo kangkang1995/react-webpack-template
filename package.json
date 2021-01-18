@@ -1,11 +1,11 @@
 {
   "name": "react-webpack-template",
   "version": "1.0.0",
-  "description": "react一个模板",
+  "description": "react一个严格模板",
   "main": "",
   "scripts": {
-    "start": "reactWebpack start",
-    "build": "reactWebpack build",
+    "start": "zhihuiWebpack start",
+    "build": "zhihuiWebpack build",
     "buildtsc": "yarn tsc",
     "clean": "rm -rf dist && rm -f tsconfig.*.tsbuildinfo",
     "build:dry": "yarn tsc -p tsconfig.ci.json",
@@ -15,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "react-simple-webpack-hua": "^1.1.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@luban/devenv": "^1.3.0",
@@ -24,15 +23,16 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
     "husky": "^4.3.7",
-    "lint-staged": "^10.5.3"
+    "lint-staged": "^10.5.3",
+    "zhihui-webpack": "^1.1.1"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "@loadable/component": "^5.14.1",
+    "antd": "^4.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "antd": "^4.9.4",
-    "@ant-design/icons": "^4.3.0",
-    "@loadable/component": "^5.14.1",
     "typescript": "3.9"
   }
 }
