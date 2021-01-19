@@ -16,3 +16,6 @@ package-lock.json
 .yarnrc
 tsconfig.tsbuildinfo
 .cache/
+webpack-config.js
+postcss.config.js
+parcelPostHTML.js

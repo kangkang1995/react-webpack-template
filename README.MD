@@ -79,7 +79,7 @@ customCopyPlugin: [
             `<meta name="format-detection" content="telephone=no">`,
         ],
         scriptChunk:[
-            `http://code.jquery.com/jquery-migrate-1.2.1.min.js`,
+            `<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>`,
         ]
     },  
     index:{
