@@ -5,12 +5,19 @@
   "main": "",
   "scripts": {
     "start": "reactWebpack start",
-    "build": "reactWebpack build"
+    "build": "reactWebpack build",
+    "clean": "rm -rf dist/",
+    "lint": "sh script/sh/lint",
+    "release": "npm run clean && npm run build",
+    "zip:beta": "node zip.js beta",
+    "zip:prod": "node zip.js prod"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "react-simple-webpack-hua": "^1.0.0"
+    "react-simple-webpack-hua": "^1.0.0",
+    "archiver": "^5.3.1",
+    "dayjs": "^1.11.7"
   },
   "dependencies": {}
 }
