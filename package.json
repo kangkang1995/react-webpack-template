@@ -4,8 +4,8 @@
   "description": "react一个宽松版模板",
   "main": "",
   "scripts": {
-    "start": "zhihuiWebpack start",
-    "build": "zhihuiWebpack build"
+    "start": "xiangWebpack start",
+    "build": "xiangWebpack build"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +14,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
-    "zhihui-webpack": "^1.1.2"
+    "xiang-webpack": "1.1.4"
   },
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
