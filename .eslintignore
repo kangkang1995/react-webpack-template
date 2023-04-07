@@ -3,5 +3,5 @@ build
 bin
 env
 utils
-postcss.config.js
 webpack-config.js
+postcss.config.js

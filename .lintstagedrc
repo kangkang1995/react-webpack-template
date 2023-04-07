@@ -1,9 +1,9 @@
 {
   "*.{ts,tsx}": [
     "sh -c \"yarn build:dry\"",
-    "lint"
+    "yarn lint"
   ],
   "*.{js,jsx}": [
-    "lint"
+    "yarn lint"
   ]
 }
