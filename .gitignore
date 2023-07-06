@@ -1,7 +1,6 @@
 /package-lock.json
 /node_modules
 /dist
-/yarn.lock
 /*.log
 .DS_Store
 Thumbs.db
@@ -11,7 +10,6 @@ dist/
 /.vscode/tasks.json
 yarn-error.log
 /*.tgz
-package-lock.json
 .npmrc
 .yarnrc
 tsconfig.tsbuildinfo
